@@ -34,12 +34,10 @@ namespace IPP_LB1
             this.buttonStartFirstThread = new System.Windows.Forms.Button();
             this.buttonStartSecondThread = new System.Windows.Forms.Button();
             this.groupBoxValue1 = new System.Windows.Forms.GroupBox();
-            this.labelTime1 = new System.Windows.Forms.Label();
-            this.labelValue1 = new System.Windows.Forms.Label();
+            this.labelPriorityThread1 = new System.Windows.Forms.Label();
             this.labelStatus1 = new System.Windows.Forms.Label();
             this.groupBoxValue2 = new System.Windows.Forms.GroupBox();
-            this.labelTime2 = new System.Windows.Forms.Label();
-            this.labelValue2 = new System.Windows.Forms.Label();
+            this.labelPriorityThread2 = new System.Windows.Forms.Label();
             this.labelStatus2 = new System.Windows.Forms.Label();
             this.buttonUpPriorityThread1 = new System.Windows.Forms.Button();
             this.buttonUpPriorityThread2 = new System.Windows.Forms.Button();
@@ -61,7 +59,7 @@ namespace IPP_LB1
             // 
             // buttonStartSecondThread
             // 
-            this.buttonStartSecondThread.Location = new System.Drawing.Point(230, 39);
+            this.buttonStartSecondThread.Location = new System.Drawing.Point(342, 39);
             this.buttonStartSecondThread.Name = "buttonStartSecondThread";
             this.buttonStartSecondThread.Size = new System.Drawing.Size(209, 61);
             this.buttonStartSecondThread.TabIndex = 1;
@@ -71,117 +69,107 @@ namespace IPP_LB1
             // 
             // groupBoxValue1
             // 
-            this.groupBoxValue1.Controls.Add(this.labelTime1);
-            this.groupBoxValue1.Controls.Add(this.labelValue1);
+            this.groupBoxValue1.Controls.Add(this.labelPriorityThread1);
             this.groupBoxValue1.Controls.Add(this.labelStatus1);
             this.groupBoxValue1.Location = new System.Drawing.Point(12, 240);
             this.groupBoxValue1.Name = "groupBoxValue1";
-            this.groupBoxValue1.Size = new System.Drawing.Size(191, 202);
+            this.groupBoxValue1.Size = new System.Drawing.Size(250, 104);
             this.groupBoxValue1.TabIndex = 6;
             this.groupBoxValue1.TabStop = false;
             this.groupBoxValue1.Text = "Value thread 1";
             // 
-            // labelTime1
+            // labelPriorityThread1
             // 
-            this.labelTime1.Location = new System.Drawing.Point(6, 95);
-            this.labelTime1.Name = "labelTime1";
-            this.labelTime1.Size = new System.Drawing.Size(159, 29);
-            this.labelTime1.TabIndex = 2;
-            this.labelTime1.Text = "Spent time: 0";
-            // 
-            // labelValue1
-            // 
-            this.labelValue1.Location = new System.Drawing.Point(6, 66);
-            this.labelValue1.Name = "labelValue1";
-            this.labelValue1.Size = new System.Drawing.Size(159, 29);
-            this.labelValue1.TabIndex = 1;
-            this.labelValue1.Text = "Current value: 0";
+            this.labelPriorityThread1.Location = new System.Drawing.Point(6, 66);
+            this.labelPriorityThread1.Name = "labelPriorityThread1";
+            this.labelPriorityThread1.Size = new System.Drawing.Size(238, 29);
+            this.labelPriorityThread1.TabIndex = 3;
+            this.labelPriorityThread1.Text = "Priority: null";
             // 
             // labelStatus1
             // 
             this.labelStatus1.Location = new System.Drawing.Point(6, 37);
             this.labelStatus1.Name = "labelStatus1";
-            this.labelStatus1.Size = new System.Drawing.Size(159, 29);
+            this.labelStatus1.Size = new System.Drawing.Size(238, 29);
             this.labelStatus1.TabIndex = 0;
             this.labelStatus1.Text = "Status: inactive";
             // 
             // groupBoxValue2
             // 
-            this.groupBoxValue2.Controls.Add(this.labelTime2);
-            this.groupBoxValue2.Controls.Add(this.labelValue2);
+            this.groupBoxValue2.Controls.Add(this.labelPriorityThread2);
             this.groupBoxValue2.Controls.Add(this.labelStatus2);
-            this.groupBoxValue2.Location = new System.Drawing.Point(248, 240);
+            this.groupBoxValue2.Location = new System.Drawing.Point(301, 240);
             this.groupBoxValue2.Name = "groupBoxValue2";
-            this.groupBoxValue2.Size = new System.Drawing.Size(191, 202);
+            this.groupBoxValue2.Size = new System.Drawing.Size(250, 104);
             this.groupBoxValue2.TabIndex = 7;
             this.groupBoxValue2.TabStop = false;
             this.groupBoxValue2.Text = "Value thread 2";
             // 
-            // labelTime2
+            // labelPriorityThread2
             // 
-            this.labelTime2.Location = new System.Drawing.Point(6, 95);
-            this.labelTime2.Name = "labelTime2";
-            this.labelTime2.Size = new System.Drawing.Size(159, 29);
-            this.labelTime2.TabIndex = 3;
-            this.labelTime2.Text = "Spent time: 0";
-            // 
-            // labelValue2
-            // 
-            this.labelValue2.Location = new System.Drawing.Point(6, 66);
-            this.labelValue2.Name = "labelValue2";
-            this.labelValue2.Size = new System.Drawing.Size(159, 29);
-            this.labelValue2.TabIndex = 2;
-            this.labelValue2.Text = "Current value: 0";
+            this.labelPriorityThread2.Location = new System.Drawing.Point(6, 66);
+            this.labelPriorityThread2.Name = "labelPriorityThread2";
+            this.labelPriorityThread2.Size = new System.Drawing.Size(238, 29);
+            this.labelPriorityThread2.TabIndex = 4;
+            this.labelPriorityThread2.Text = "Priority: null";
             // 
             // labelStatus2
             // 
             this.labelStatus2.Location = new System.Drawing.Point(6, 37);
             this.labelStatus2.Name = "labelStatus2";
-            this.labelStatus2.Size = new System.Drawing.Size(159, 29);
+            this.labelStatus2.Size = new System.Drawing.Size(238, 29);
             this.labelStatus2.TabIndex = 1;
             this.labelStatus2.Text = "Status: inactive";
             // 
             // buttonUpPriorityThread1
             // 
+            this.buttonUpPriorityThread1.Enabled = false;
             this.buttonUpPriorityThread1.Location = new System.Drawing.Point(12, 106);
             this.buttonUpPriorityThread1.Name = "buttonUpPriorityThread1";
             this.buttonUpPriorityThread1.Size = new System.Drawing.Size(210, 61);
             this.buttonUpPriorityThread1.TabIndex = 2;
             this.buttonUpPriorityThread1.Text = "Збільшити пріорітет першого потоку";
             this.buttonUpPriorityThread1.UseVisualStyleBackColor = true;
+            this.buttonUpPriorityThread1.Click += new System.EventHandler(this.buttonUpPriorityThread1_Click);
             // 
             // buttonUpPriorityThread2
             // 
-            this.buttonUpPriorityThread2.Location = new System.Drawing.Point(230, 106);
+            this.buttonUpPriorityThread2.Enabled = false;
+            this.buttonUpPriorityThread2.Location = new System.Drawing.Point(342, 106);
             this.buttonUpPriorityThread2.Name = "buttonUpPriorityThread2";
             this.buttonUpPriorityThread2.Size = new System.Drawing.Size(210, 61);
             this.buttonUpPriorityThread2.TabIndex = 3;
             this.buttonUpPriorityThread2.Text = "Збільшити пріорітет другого потоку";
             this.buttonUpPriorityThread2.UseVisualStyleBackColor = true;
+            this.buttonUpPriorityThread2.Click += new System.EventHandler(this.buttonUpPriorityThread2_Click);
             // 
             // buttonDownPriorityThread1
             // 
+            this.buttonDownPriorityThread1.Enabled = false;
             this.buttonDownPriorityThread1.Location = new System.Drawing.Point(12, 173);
             this.buttonDownPriorityThread1.Name = "buttonDownPriorityThread1";
             this.buttonDownPriorityThread1.Size = new System.Drawing.Size(210, 61);
             this.buttonDownPriorityThread1.TabIndex = 4;
             this.buttonDownPriorityThread1.Text = "Зменшити пріорітет першого потоку";
             this.buttonDownPriorityThread1.UseVisualStyleBackColor = true;
+            this.buttonDownPriorityThread1.Click += new System.EventHandler(this.buttonDownPriorityThread1_Click);
             // 
             // buttonDownPriorityThread2
             // 
-            this.buttonDownPriorityThread2.Location = new System.Drawing.Point(230, 173);
+            this.buttonDownPriorityThread2.Enabled = false;
+            this.buttonDownPriorityThread2.Location = new System.Drawing.Point(342, 173);
             this.buttonDownPriorityThread2.Name = "buttonDownPriorityThread2";
             this.buttonDownPriorityThread2.Size = new System.Drawing.Size(210, 61);
             this.buttonDownPriorityThread2.TabIndex = 5;
             this.buttonDownPriorityThread2.Text = "Зменшити пріорітет другого потоку";
             this.buttonDownPriorityThread2.UseVisualStyleBackColor = true;
+            this.buttonDownPriorityThread2.Click += new System.EventHandler(this.buttonDownPriorityThread2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 454);
+            this.ClientSize = new System.Drawing.Size(563, 356);
             this.Controls.Add(this.buttonDownPriorityThread2);
             this.Controls.Add(this.buttonDownPriorityThread1);
             this.Controls.Add(this.buttonUpPriorityThread2);
@@ -195,16 +183,11 @@ namespace IPP_LB1
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.groupBoxValue1.ResumeLayout(false);
             this.groupBoxValue2.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
-
-        private System.Windows.Forms.Label labelValue1;
-        private System.Windows.Forms.Label labelValue2;
-        private System.Windows.Forms.Label labelTime1;
-        private System.Windows.Forms.Label labelTime2;
 
         private System.Windows.Forms.Label labelStatus2;
 
@@ -216,10 +199,12 @@ namespace IPP_LB1
         private System.Windows.Forms.Button buttonStartSecondThread;
 
         private System.Windows.Forms.Button buttonStartFirstThread;
-        private Button buttonUpPriorityThread1;
-        private Button buttonUpPriorityThread2;
-        private Button buttonDownPriorityThread1;
-        private Button buttonDownPriorityThread2;
+        private System.Windows.Forms.Button buttonUpPriorityThread1;
+        private System.Windows.Forms.Button buttonUpPriorityThread2;
+        private System.Windows.Forms.Button buttonDownPriorityThread1;
+        private System.Windows.Forms.Button buttonDownPriorityThread2;
+        private Label labelPriorityThread1;
+        private Label labelPriorityThread2;
     }
     #endregion
 }
